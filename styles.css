@@ -69,15 +69,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    transition: 0.3s ease;
 }
 
 .card .head .socialNetworks a {
     color: #fff;
-}
-
-.socialNetworks:hover{
-    color: var(--clr5)
 }
 
 .card .head .contact {
