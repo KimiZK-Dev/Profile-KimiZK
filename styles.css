@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+:root{
+    --clr: #082646;
+    --clr2: #7f91a3;
+    --clr3: #0c4e7f;
+    --clr4: #e4bfa8;
+    --clr5: #1c7ba9;
+    
+}
+
+body{
+    
+    height: 100vh;
+    width: 100%;
+    background: url('./bg.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 10px;
+    overflow: hidden;
+    .head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15% 10%;
+        color: var(--clr4);
+        background: var(--clr3);
+        .avt{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: var(--clr5) solid 10px;
+            margin-bottom: 10px;
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        h3{
+            font-size: 22px;
+            color: #fefefe;
+            margin-bottom: 5px;
+        }
+        h5{
+            margin-bottom: 10px;
+        }
+        .socialNetworks{
+            font-size: large;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            a{
+                color: #fff;
+            }
+        }   
+        .contact{
+            background: transparent;
+            border: var(--clr4) solid 2px;
+            border-radius: 5px;
+            padding: 4% 12%;
+            a{
+                font-weight: 600;
+                color: var(--clr4);
+                transition: 0.3s ease;
+
+            }
+            transition: 0.3s ease;
+
+        }
+        .contact:hover{
+            border: var(--clr2) solid 2px;
+            background: var(--clr2);
+            a{
+                color: var(--clr3);
+            }
+        }
+    }
+    
+    .footer{
+        width: 350px;
+        height: 100px;
+        padding: 0 15px;
+        background: var(--clr5);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+            color: var(--clr);
+            text-align: center;
+            span{
+                font-size: small;
+            }
+        }
+        .border{
+            width: 1px;
+            height: 40px;
+            background: var(--clr3);
+        }
+    
+    }
+}
