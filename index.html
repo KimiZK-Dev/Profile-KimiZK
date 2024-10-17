@@ -1,204 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script
+			disable-devtool-auto
+			src="./script/blockDevTools.min.js"
+			defer
+		></script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Download All In One - Socials</title>
-		<link rel="icon" href="./assets/images/icon.jpg" type="image/x-icon" />
+		<title>Card Profie - KimiZK</title>
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
+			rel="icon"
+			href="./assets/images/profile/avatar.png"
+			type="image/x-icon"
 		/>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./styles/profile/index.css" />
+		<link rel="stylesheet" href="./styles/profile/banking.css" />
+		<script src="./script/profile.js" defer></script>
+		<script src="./script/exts.js" defer></script>
+		<meta
+			name="description"
+			content="Thẻ thông tin người dùng của KimiZK :3"
+		/>
+		<meta name="author" content="Nguyễn Hữu Bách" />
+		<meta http-equiv="refresh" content="300" />
+		<meta
+			property="og:title"
+			content="Thẻ thông tin người dùng của KimiZK :3"
+		/>
 		<link
-	rel="stylesheet"
-	href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-/>
-<link
-	rel="stylesheet"
-	href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-/>
-<link
-	rel="stylesheet"
-	href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-/>
-<link
-	rel="stylesheet"
-	href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-/>
-<link
-	rel="stylesheet"
-	href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-/>
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+		/>
 	</head>
 	<body>
-		    <div class="profileMain mt-4">
-    	<div class="headerProfile ">
-    		<div class="container-avatar">
-    			<div class="border-avatar">
-    				<img src="assets/images/icon.jpg" draggable="false">
-    			</div>
-    		</div>
-			
-    		<div class="nameContainer d-flex justify-content-center align-items-center">
-    			<h2 class="name">Ng Huu Bach</h2>
-    			<div class="badge mb-2">
-    				<img src="assets/images/badge.png" draggable="false">
-    			</div>
-    		</div>
-    		<p class="subtitle text-center">"Phát minh đòi hỏi sự kiên nhẫn và đam mê. Không có công việc nào dễ dàng hơn là phát minh"</p>
-    	</div>
+		<header>
+			<nav>
+				<a href="">
+					<i class="fa-duotone fa-solid fa-house-night"></i>
+					KimiZK
+				</a>
+				<a href="tools">
+					<i class="fa-duotone fa-solid fa-screwdriver-wrench"></i>
+					Tools
+				</a>
+			</nav>
+		</header>
+		<div class="main">
+			<div class="container">
+				<div id="head">
+					<div class="bgCard">
+						<img src="" />
+					</div>
 
+					<div class="avtCard">
+						<img src="" />
+					</div>
 
-    	<div class="infomation container d-grid gap-4 text-center mt-3">
-    		<div>
-    			<p class="forMe">Nghề Nghiệp</p>
-    			<span class="des-forMe">Học sinh, MMO, Editor, Developer</span>
-    		</div>
-    		<div>
-    			<p class="forMe">Nơi Sinh Sống</p>
-    			<span class="des-forMe">Hương Khê, Hà Tĩnh, Việt Nam</span>
-    		</div>
-    		<div>
-    			<p class="forMe">Sở Thích</p>
-    			<span class="des-forMe">Nghe nhạc, Chơi game, Nấu ăn, Tìm hiểu, ...</span>
-    		</div>
-    		<div>
-    			<p class="forMe">Tính Cách</p>
-    			<span class="des-forMe">Vui vẻ, Thân thiện, Hòa đồng, Dễ làm quen, ...</span>
-    		</div>
-    	</div>
+					<div class="nameProfile">
+						<span class="name"></span>
+						<span class="nickName"></span>
+						<div class="verified">
+							<img src="" />
+						</div>
+					</div>
 
+					<i
+						><em><h5 class="bio"></h5></em
+					></i>
+				</div>
 
-		<div class="content container mt-3">
-			<div class="split">
-				<span class="line"></span>
-				<h2 class="fs-3">Giới Thiệu Chung</h2>
-				<span class="line"></span>
+				<div id="body">
+					<div class="contact">
+						<div class="follow">
+							<a
+								href=""
+								class="btn-follow"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<i
+									class="fa-duotone fa-heart-circle-check fa-beat-fade"
+								></i>
+								Follow
+							</a>
+						</div>
+
+						<div class="chat">
+							<a
+								href=""
+								class="btn-chat"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<i
+									class="fa-duotone fa-messages fa-beat-fade"
+								></i>
+								Nhắn
+							</a>
+						</div>
+					</div>
+
+					<div class="post">
+						<div id="selector-1" class="box">
+							<div class="picPost">
+								<img src="" />
+							</div>
+
+							<div class="action">
+								<div class="content">
+									<p class="title"></p>
+									<p class="des"></p>
+								</div>
+								<div class="rect">
+									<i class="fa-solid fa-heart fa-beat"></i>
+									<p class="count-rect">999</p>
+								</div>
+							</div>
+						</div>
+						<div id="selector-2" class="box">
+							<div class="bank">
+								<div class="icon-banking">
+									<img
+										src="./assets/images/bankings/mbbank.png"
+									/>
+								</div>
+								<div class="info-account">
+									<p class="nameBanking">MB Bank</p>
+									<p class="stk">77030420088888</p>
+								</div>
+								<div class="btn-bank">
+									<i class="fa-duotone fa-arrow-right"></i>
+								</div>
+							</div>
+							<div class="bank">
+								<div class="icon-banking">
+									<img
+										src="./assets/images/bankings/agribank.png"
+									/>
+								</div>
+								<div class="info-account">
+									<p class="nameBanking">Agribank</p>
+									<p class="stk">Không có tài khoản</p>
+								</div>
+								<div class="btn-bank">
+									<i class="fa-duotone fa-arrow-right"></i>
+								</div>
+							</div>
+							<div class="bank">
+								<div class="icon-banking">
+									<img
+										src="./assets/images/bankings/techcombank.png"
+									/>
+								</div>
+								<div class="info-account">
+									<p class="nameBanking">Techcombank</p>
+									<p class="stk">Không có tài khoản</p>
+								</div>
+								<div class="btn-bank">
+									<i class="fa-duotone fa-arrow-right"></i>
+								</div>
+							</div>
+							<div class="bank">
+								<div class="icon-banking">
+									<img
+										src="./assets/images/bankings/vietinbank.png"
+									/>
+								</div>
+								<div class="info-account">
+									<p class="nameBanking">VietinBank</p>
+									<p class="stk">Không có tài khoản</p>
+								</div>
+								<div class="btn-bank">
+									<i class="fa-duotone fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+						<div id="selector-3" class="box">
+							<div id="CSoon">
+								<p>Comming Soon...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="footer">
+					<ul>
+						<li class="tab home">
+							<i
+								id="btn-1"
+								class="fa-duotone fa-house-heart"
+								onclick="home()"
+							></i>
+							<p>Home</p>
+						</li>
+						<li class="tab banking">
+							<i
+								id="btn-2"
+								class="fa-duotone fa-building-columns"
+								onclick="banking()"
+							></i>
+							<p>Banking</p>
+						</li>
+						<li class="tab others">
+							<i
+								id="btn-3"
+								class="fa-duotone fa-ellipsis"
+								onclick="others()"
+							></i>
+							<p>Others</p>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<p class="wow fs-6 text-center mb-5">Chào mọi người! Tôi là một người trẻ năng động đến từ Hương Khê, Hà Tĩnh. Bên cạnh việc học, tôi còn có nhiều kinh nghiệm trong các lĩnh vực như MMO, chỉnh sửa video và phát triển phần mềm. Tôi yêu thích âm nhạc, đam mê chơi game, thích nấu ăn và luôn tò mò tìm hiểu những điều mới lạ. Với tính cách vui vẻ, thân thiện và dễ hòa đồng, tôi hy vọng sẽ có cơ hội được kết nối và chia sẻ với nhiều người. </p>
-			<div class="split">
-				<span class="line"></span>
-				<h2 class="fs-3">Liên Kết Chuyển Tiếp</h2>
-				<span class="line"></span>
-			</div>
 		</div>
-
-
-		<div class="cards-container d-grid justify-content-center gap-4 mt-3">
-    			<div class="card" onclick="window.open('//facebook.com/KimiZK.ILU', '_blank')">
-    				<img class="card-img" src="assets/images/fb.jpg" draggable="false">
-    				<div class="card-content">
-    					<h2 class="card-title">Facebook</h2>
-    					<h2 class="card-subtitle" translate="no">KimiZK.ILU</h2>
-    				</div>
-    			</div>
-    			<div class="card" onclick="window.open('//m.me/KimiZK.ILU', '_blank')">
-    				<img class="card-img" src="assets/images/mess.jpeg" draggable="false">
-    				<div class="card-content">
-    					<h2 class="card-title">Messenger</h2>
-    					<h2 class="card-subtitle" translate="no">KimiZK.ILU</h2>
-    				</div>
-    			</div>
-    			<div class="card" onclick="window.open('//tiktok.com/@KimiZK.Dev', '_blank')">
-    				<img class="card-img" src="assets/images/tiktok.jpeg" draggable="false">
-    				<div class="card-content">
-    					<h2 class="card-title">Tiktok</h2>
-    					<h2 class="card-subtitle" translate="no">KimiZK.Dev</h2>
-    				</div>
-    			</div>
-    			<div class="card" onclick="window.open('//instagram.com/Kimizk.Dev', '_blank')">
-    				<img class="card-img" src="assets/images/ig.jpeg" draggable="false">
-    				<div class="card-content">
-    					<h2 class="card-title">Instagram</h2>
-    					<h2 class="card-subtitle" translate="no">KimiZK.Dev</h2>
-    				</div>
-    			</div>
-    			<div class="card" onclick="window.open('//youtube.com/@KimiZK', '_blank')">
-    				<img class="card-img" src="assets/images/ytb.jpeg" draggable="false">
-    				<div class="card-content">
-    					<h2 class="card-title">Youtube</h2>
-    					<h2 class="card-subtitle" translate="no">KimiZK</h2>
-    				</div>
-    			</div>
-    			<div class="card" onclick="window.open('//ngame1137.onelink.me/jFUN/AOVDay2024', '_blank')">
-    				<img class="card-img" src="assets/images/aov.jpeg" draggable="false">
-    				<div class="card-content">
-    					<h2 class="card-title">Liên Quân Mobile</h2>
-    					<h3 class="card-subtitle" translate="no">cry.w’wιndy౨ৎ</h3>
-    				</div>
-    			</div>
-		</div>
-
-
-		<div class="footerA text-center text-light-emphasis mt-5">
-    			<small class="d-block">Source Git: @Swee5t</small>
-    			<small>Edit: @KimiZK</small>
-		</div>
-
-		
-    	<div class="popup-container">
-    		<div class="popupNoti border border-warning rounded-3 text-center">
-				<i class="bi bi-bell-fill position-absolute top-0 start-50 translate-middle text-warning fs-4"></i>
-    			<div class="contents">
-    				<p class="text fs-4 mt-4 mb-0">Thông Báo</p>
-    				<p class="description mt-2">Vì nhà phát triển trang này quá lười, các tính năng có thể không hoạt động trên iOS hoặc Android.</p>
-    				<span class="split"></span>
-    				<p class="button closeBtn text-warning">Okey!</p>
-    				<span class="split"></span>
-    				<p class="button linkBtn text-warning">Xem source code (GitHub)</p>
-    			</div>
-    		</div>
-
-    		<div class="popupBadge border border-warning rounded-3 text-center">
-    			<img class="logo position-absolute top-0 start-50 translate-middle" src="assets/images/badge.png" draggable="false">
-    			<div class="contents">
-    				<p class="text fs-4 mt-4 mb-0">Huy Hiệu Chứng Nhận</p>
-    				<p class="description mt-2">Tài khoản này đã được chứng nhận vào ngày 25/4/2024</p>
-    				<span class="split"></span>
-    				<p class="button closeBtn text-warning">Đóng!</p>
-    				<span class="split"></span>
-    				<p class="button linkBtn text-warning">Nhận Huy Hiệu</p>
-    			</div>
-    		</div>
-    	</div>
-
-    <script>
-    	document.addEventListener('DOMContentLoaded', () => {
-    		const popupContainer = $('.popup-container')
-    		const popupNoti = $('.popupNoti')
-    		const popupBadge = $('.popupBadge')
-    		const closeBtn = $('.closeBtn')
-    		const linkBtn = $('.linkBtn')
-    		const badge = $('.badge')
-
-			if(popupContainer){
-				popupBadge.css('display', 'none')
-				popupContainer.css('display', 'flex')
-			}
-
-			closeBtn.on('click', () => {
-				popupContainer.css('display', 'none')
-			})
-
-			linkBtn.each(function(i, e) {
-    			if (i === 0) {
-					$(e).on('click', () => { window.open('https://github.com/Swee5t/my-website', '_blank'); });
-				} else {
-					$(e).on('click', () => { window.open('https://youtu.be/dQw4w9WgXcQ', '_blank'); });
-				}
-			});	
-
-			badge.on('click', () => {
-				popupNoti.css('display', 'none');
-				popupContainer.css('display', 'flex');
-				popupBadge.css('display', 'flex');
-			})	
-    	});
-    </script>
 	</body>
-	
 </html>
